@@ -7,7 +7,16 @@
     <artifactId>cdnlib</artifactId>
     <packaging>jar</packaging>
     <name>CDNLib</name>
-    <version>1.6.1</version>
+    <version>1.6.2</version>
+
+    <distributionManagement>
+        <repository>
+            <id>cdn-repository</id>
+            <name>CDN-Repository</name>
+            <url>https://maven.chloecdn.de/releases</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>

@@ -6,7 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 
-public class PluginCommandManager {
+public class CommandManager {
 
     /**
      * Registers the given command, that will run the given runAction when someone runs it.
@@ -14,7 +14,7 @@ public class PluginCommandManager {
      *
      * @param command   The name of the command to register.
      * @param runAction the action to perform when someone runs the command.
-     * @deprecated This method is deprecated in favor of the method {@link PluginCommandManager#registerVanilla(String, RunAction)} (String, RunAction)},
+     * @deprecated This method is deprecated in favor of the method {@link CommandManager#registerVanilla(String, RunAction)},
      * which doesn't require adding every command to the 'plugin.yml' manually.
      */
     @Deprecated
