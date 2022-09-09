@@ -10,9 +10,13 @@ public final class CDNLib {
      */
     private static JavaPlugin plugin;
 
-    public CDNLib(JavaPlugin plugin) {
+    public CDNLib(JavaPlugin plugin, String logMessage) {
         CDNLib.plugin = plugin;
-        Logging.info("Initialized CDNLib.");
+        Logging.info(logMessage);
+    }
+
+    public CDNLib(JavaPlugin plugin) {
+        this(plugin, "Initialized CDNLib.");
     }
 
     public static JavaPlugin getPlugin() {

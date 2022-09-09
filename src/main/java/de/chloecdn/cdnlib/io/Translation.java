@@ -32,8 +32,4 @@ public class Translation {
     public static void sendMessage(CommandSender sender, String message) {
         sender.sendMessage(sender instanceof Player ? message : ChatColor.stripColor(message));
     }
-
-    public static void broadcastMessage(String message) {
-        Bukkit.broadcastMessage(message);
-    }
 }

@@ -1,13 +1,12 @@
 package de.chloecdn.cdnlib.util;
 
 /**
- * This class can be used in places where you need to assign a specific value to a key, when you need to get that assigned value later.
- * This is for example used for the Translation Utils.
+ * This class can be used in places where you need to assign a specific value to a key.
  *
  * @param key   the key
  * @param value the value
- * @param <A>   the key's type
- * @param <B>   the value's type
+ * @param <A>   the key type
+ * @param <B>   the value type
  */
 public record KeyValuePair<A, B>(A key, B value) {
 
